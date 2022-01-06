@@ -1,8 +1,5 @@
 load("render.star", "render")
 load("http.star", "http")
-load("encoding/base64.star", "base64")
-load("cache.star", "cache")
-load("encoding/json.star", "json")
 
 def main(config):
     Quote_Of_Day_URI = "https://zenquotes.io/api/random"
@@ -12,9 +9,6 @@ def main(config):
     response = response.json()
     quote = response[0]["q"]
     author = response[0]["a"]
-
-    # quote = "here is a really long quote and it seems to go on forever and forever, when will it stop? No one really knows. Maybe it will stop after this sentence. Yeah that works. Wait let's add antoher sentence here. End"
-    # quote = "short one"
 
     quote_word_count = len(quote.split())
 
