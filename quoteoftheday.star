@@ -30,7 +30,7 @@ def main(config):
                         cross_align = "center",
                         children = [
                             render.WrappedText(
-                                content="Hourly Quote", 
+                                content="Daily Quote", 
                                 font="5x8", 
                                 color="#dbdbdb"
                             ),
